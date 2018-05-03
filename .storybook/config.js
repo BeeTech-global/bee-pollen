@@ -1,9 +1,18 @@
-import { configure } from '@storybook/react';
+import { configure, setAddon } from '@storybook/react'
+import { setOptions } from '@storybook/addon-options'
+import infoAddon from '@storybook/addon-info'
+import pkg from '../package.json'
 
-// automatically import all files ending in *.stories.js
-const req = require.context('../stories', true, /.stories.js$/);
-function loadStories() {
-  req.keys().forEach(filename => req(filename));
+const requires = require.context('../packages/', true, /storybook\.js$/)
+const choreRequires = require.context('../.storybook', true, /storybook\.js$/)
+
+const loadStories = () => {
+  choreRequires.keys().forEach(choreRequires)
+  requires.keys().forEach(requires)
 }
 
-configure(loadStories, module);
+setAddon(infoAddon)
+
+setOptions({ name: `Bee Pollen v${pkg.version}` })
+
+configure(loadStories, module)

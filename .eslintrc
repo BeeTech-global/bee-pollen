@@ -9,5 +9,21 @@
     "browser": true,
     "jest": true,
     "node": true
+  },
+  "rules": {
+    "indent": ["error", 2, {
+      "MemberExpression": 0
+    }],
+    "arrow-parens": [2, "as-needed"],
+    "react/jsx-filename-extension": 0,
+    "import/no-extraneous-dependencies": ["error", {
+      "packageDir": "./",
+      "devDependencies": [
+        "**/*.test.js",
+        "**/*.spec.js",
+        "**/*.storybook.js",
+        "**/.storybook/**/*"
+      ]
+    }]
   }
 }
