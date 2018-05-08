@@ -12,6 +12,10 @@
     "url": "https://github.com/BeeTech-global/bee-pollen/issues"
   },
   "homepage": "https://github.com/BeeTech-global/bee-pollen#readme",
+  "scripts": {
+    "storybook": "start-storybook -p 9001",
+    "build-storybook": "build-storybook"
+  },
   "dependencies": {
     "bootstrap": "^4.1.1",
     "normalize.css": "^8.0.0",
@@ -25,11 +29,13 @@
     "@storybook/addon-options": "^3.4.3",
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",
+    "autoprefixer": "^8.4.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-standard": "^11.0.0",
@@ -41,6 +47,9 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.1.0",
     "node-sass": "^4.9.0",
+    "postcss-flexbugs-fixes": "^3.3.1",
+    "postcss-font-magician": "^2.1.1",
+    "postcss-loader": "^2.1.4",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "stylelint": "^9.2.0",
@@ -48,9 +57,5 @@
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.1.0",
     "webpack-merge": "^4.1.2"
-  },
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
   }
 }

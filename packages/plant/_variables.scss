@@ -1,1 +1,45 @@
-$bee-font-family-base: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif !default;
+// Bootstrap init
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+// Colors
+// Base color names taken from http://www.color-blindness.com/color-name-hue/
+$color-dim-gray: #606060;
+$color-regal-blue: #224466;
+$color-cherry-pie: #333355;
+$color-medium-sea-green: #4b8;
+$color-new-midnight-blue: #0ac;
+$color-dask-pastel-green: #0b4;
+$color-dark-orange: #f80;
+$color-international-orange: #f50;
+$color-medium-spring-green: #0EFF8F;
+$color-pattens-blue: #EFF8FA;
+$color-wild-rice: #DBE57B;
+$color-dark-tangerine: #FDBA22;
+$color-sun: #F47628;
+
+$colors: (
+  'dim-gray': $color-dim-gray,
+  'regal-blue': $color-regal-blue,
+  'cherry-pie': $color-cherry-pie,
+  'medium-sea-green': $color-medium-sea-green,
+  'new-midnight-blue': $color-new-midnight-blue,
+  'dask-pastel-green': $color-dask-pastel-green,
+  'dark-orange': $color-dark-orange,
+  'international-orange': $color-international-orange
+);
+
+$theme-colors: (
+  'primary': #{var(--color-cherry-pie)},
+  'secondary': #{var(--color-medium-sea-green)},
+  'tertiary': #{var(--color-new-midnight-blue)},
+  'success': #{var(--color-dask-pastel-green)},
+  'warning': #{var(--color-dark-orange)},
+  'danger': #{var(--color-international-orange)}
+  'aux01': #{var(--color-pattens-blue)},
+  'aux02': #{var(--color-wild-rice)},
+  'aux03': #{var(--color-dark-tangerine)},
+  'aux04': #{var(--color-sun)}
+);
+
+$font-family-base: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif !default;
