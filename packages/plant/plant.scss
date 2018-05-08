@@ -1,5 +1,16 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import 'functions';
 @import 'variables';
 @import 'root';
+
 @import '~normalize.css/normalize.css';
 @import 'base';
+@import 'typography';
+
 @import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/utilities/clearfix';
+@import '~bootstrap/scss/utilities/spacing';
+@import '~bootstrap/scss/utilities/text';

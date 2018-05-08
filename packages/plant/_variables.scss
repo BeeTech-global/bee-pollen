@@ -1,9 +1,6 @@
-// Bootstrap init
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-
 // Colors
 // Base color names taken from http://www.color-blindness.com/color-name-hue/
+$color-dark-gray: #aaa;
 $color-dim-gray: #606060;
 $color-regal-blue: #224466;
 $color-cherry-pie: #333355;
@@ -19,6 +16,7 @@ $color-dark-tangerine: #FDBA22;
 $color-sun: #F47628;
 
 $colors: (
+  'dark-gray': $color-dim-gray,
   'dim-gray': $color-dim-gray,
   'regal-blue': $color-regal-blue,
   'cherry-pie': $color-cherry-pie,
@@ -26,20 +24,27 @@ $colors: (
   'new-midnight-blue': $color-new-midnight-blue,
   'dask-pastel-green': $color-dask-pastel-green,
   'dark-orange': $color-dark-orange,
-  'international-orange': $color-international-orange
+  'international-orange': $color-international-orange,
+  'medium-spring-green': $color-medium-spring-green,
+  'pattens-blue': $color-pattens-blue,
+  'wild-rice': $color-wild-rice,
+  'dark-tangerine': $color-dark-tangerine,
+  'sun': $color-sun
 );
 
 $theme-colors: (
-  'primary': #{var(--color-cherry-pie)},
-  'secondary': #{var(--color-medium-sea-green)},
-  'tertiary': #{var(--color-new-midnight-blue)},
-  'success': #{var(--color-dask-pastel-green)},
-  'warning': #{var(--color-dark-orange)},
-  'danger': #{var(--color-international-orange)}
-  'aux01': #{var(--color-pattens-blue)},
-  'aux02': #{var(--color-wild-rice)},
-  'aux03': #{var(--color-dark-tangerine)},
-  'aux04': #{var(--color-sun)}
+  'base-text': $color-dim-gray,
+  'heading': $color-regal-blue,
+  'primary': $color-cherry-pie,
+  'secondary': $color-medium-sea-green,
+  'tertiary': $color-new-midnight-blue,
+  'success': $color-dask-pastel-green,
+  'warning': $color-dark-orange,
+  'danger': $color-international-orange,
+  'aux01': $color-pattens-blue,
+  'aux02': $color-wild-rice,
+  'aux03': $color-dark-tangerine,
+  'aux04': $color-sun
 );
 
-$font-family-base: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif;
