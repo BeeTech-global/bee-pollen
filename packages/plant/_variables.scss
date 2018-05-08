@@ -4,19 +4,20 @@ $color-cherry-pie: #335;
 $color-bay-of-many: #346;
 $color-regal-blue: #246;
 $color-dim-gray: #606060;
-$color-dark-gray: #AAA;
-$color-echo-blue: #ABC;
-$color-pattens-blue: #EFF8FA;
-$color-medium-spring-green: #2E9;
-$color-dask-pastel-green: #0B4;
-$color-medium-sea-green: #4B8;
-$color-dark-tangerine: #FDBA22;
-$color-dark-orange: #F80;
-$color-sun: #F47628;
-$color-international-orange: #F50;
-$color-wild-rice: #DBE57B;
-$color-new-midnight-blue: #0AC;
-$color-dodger-blue: #08E;
+$color-dark-gray: #aaa;
+$color-echo-blue: #abc;
+$color-pattens-blue: #eff8fa;
+$color-malachite: #11b844;
+$color-medium-spring-green: #2e9;
+$color-dask-pastel-green: #0b4;
+$color-medium-sea-green: #4b8;
+$color-dark-tangerine: #fdba22;
+$color-dark-orange: #f80;
+$color-sun: #f47628;
+$color-international-orange: #f50;
+$color-wild-rice: #dbe57b;
+$color-new-midnight-blue: #0ac;
+$color-dodger-blue: #08e;
 
 $colors: (
   'cherry-pie': $color-cherry-pie,
@@ -53,4 +54,12 @@ $theme-colors: (
   'aux04': $color-sun
 ) !default;
 
+$body-color: $color-dim-gray;
+
 $font-family-sans-serif: 'Open Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
+$font-weight-bold: 600;
+
+$btn-border-radius: to-rem(3px);
+$btn-padding-y: to-rem(12px);
+$btn-padding-x: to-rem(12px);
+$btn-line-height: 1.5;
