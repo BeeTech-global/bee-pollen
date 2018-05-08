@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
   -moz-osx-font-smoothing: grayscale;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ html {
 body {
   color: var(--theme-base-text);
   font-size: 1rem;
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-sans-serif);
   line-height: 1.3333;
   -ms-overflow-style: scrollbar;
   font-feature-settings: "kern" 1, "liga" 1;

@@ -11,6 +11,7 @@
     "node": true
   },
   "rules": {
+    "jsx-quotes": [2, "prefer-double"],
     "indent": ["error", 2, {
       "MemberExpression": 0
     }],

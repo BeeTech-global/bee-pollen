@@ -31,8 +31,13 @@ h4,
   line-height: 1.6;
 }
 
+b,
+strong { font-weight: 600 }
+
 p {
-  color: var(--theme-base-text);
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .text-support {

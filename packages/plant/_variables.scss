@@ -1,36 +1,42 @@
 // Colors
 // Base color names taken from http://www.color-blindness.com/color-name-hue/
-$color-dark-gray: #aaa;
+$color-cherry-pie: #335;
+$color-bay-of-many: #346;
+$color-regal-blue: #246;
 $color-dim-gray: #606060;
-$color-regal-blue: #224466;
-$color-cherry-pie: #333355;
-$color-medium-sea-green: #4b8;
-$color-new-midnight-blue: #0ac;
-$color-dask-pastel-green: #0b4;
-$color-dark-orange: #f80;
-$color-international-orange: #f50;
-$color-medium-spring-green: #0EFF8F;
+$color-dark-gray: #AAA;
+$color-echo-blue: #ABC;
 $color-pattens-blue: #EFF8FA;
-$color-wild-rice: #DBE57B;
+$color-medium-spring-green: #2E9;
+$color-dask-pastel-green: #0B4;
+$color-medium-sea-green: #4B8;
 $color-dark-tangerine: #FDBA22;
+$color-dark-orange: #F80;
 $color-sun: #F47628;
+$color-international-orange: #F50;
+$color-wild-rice: #DBE57B;
+$color-new-midnight-blue: #0AC;
+$color-dodger-blue: #08E;
 
 $colors: (
-  'dark-gray': $color-dim-gray,
-  'dim-gray': $color-dim-gray,
-  'regal-blue': $color-regal-blue,
   'cherry-pie': $color-cherry-pie,
-  'medium-sea-green': $color-medium-sea-green,
-  'new-midnight-blue': $color-new-midnight-blue,
-  'dask-pastel-green': $color-dask-pastel-green,
-  'dark-orange': $color-dark-orange,
-  'international-orange': $color-international-orange,
-  'medium-spring-green': $color-medium-spring-green,
+  'bay-of-many': $color-bay-of-many,
+  'regal-blue': $color-regal-blue,
+  'dim-gray': $color-dim-gray,
+  'dark-gray': $color-dark-gray,
+  'echo-blue': $color-echo-blue,
   'pattens-blue': $color-pattens-blue,
-  'wild-rice': $color-wild-rice,
+  'medium-spring-green': $color-medium-spring-green,
+  'dask-pastel-green': $color-dask-pastel-green,
+  'medium-sea-green': $color-medium-sea-green,
   'dark-tangerine': $color-dark-tangerine,
-  'sun': $color-sun
-);
+  'dark-orange': $color-dark-orange,
+  'sun': $color-sun,
+  'international-orange': $color-international-orange,
+  'wild-rice': $color-wild-rice,
+  'new-midnight-blue': $color-new-midnight-blue,
+  'dodger-blue': $color-dodger-blue
+) !default;
 
 $theme-colors: (
   'base-text': $color-dim-gray,
@@ -45,6 +51,6 @@ $theme-colors: (
   'aux02': $color-wild-rice,
   'aux03': $color-dark-tangerine,
   'aux04': $color-sun
-);
+) !default;
 
-$font-family-sans-serif: 'Open Sans', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Open Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;

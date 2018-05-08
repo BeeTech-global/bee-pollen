@@ -35,6 +35,7 @@
     "babel-eslint": "^8.2.3",
     "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.11",
+    "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",

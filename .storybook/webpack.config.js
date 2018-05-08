@@ -3,6 +3,7 @@ const merge = require('webpack-merge')
 const fontMagician = require('postcss-font-magician')
 const flexBugsFixes = require('postcss-flexbugs-fixes')
 const autoprefixer = require('autoprefixer')
+const mqPacker = require('css-mqpacker')
 
 const packagesPath = path.resolve(__dirname, '../', 'packages')
 const nodeModules = path.resolve(__dirname, '../', 'node_modules')
@@ -17,7 +18,11 @@ module.exports = storybookBaseConfig => {
     module: {
       rules: [{
         test: /\.scss$/,
-        include: [nodeModules, packagesPath],
+        include: [
+          nodeModules,
+          packagesPath,
+          path.resolve(__dirname, '.')
+        ],
         use: [{
           loader: require.resolve('style-loader'),
         }, {
@@ -28,13 +33,12 @@ module.exports = storybookBaseConfig => {
           options: {
             sourceMap: true,
             plugins: () => [
-              fontMagician({
-                display: 'block'
-              }),
+              fontMagician({ display: 'block' }),
               flexBugsFixes(),
               autoprefixer({
-                browsers: ['last 2 versions', 'ie >= 10', '> 5%']
-              })
+                browsers: ['last 3 versions', 'ie >= 11', '> 5%']
+              }),
+              mqPacker()
             ]
           }
         }, {
