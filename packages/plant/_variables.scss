@@ -69,6 +69,18 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    6: 4rem,
+    7: 6rem,
+    8: 10rem,
+    9: 15rem,
+    10: 10rem
+  ),
+  $spacers
+);
+
 $body-color: $color-dim-gray;
 
 $font-family-sans-serif: 'Open Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
