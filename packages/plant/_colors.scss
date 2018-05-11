@@ -1,0 +1,9 @@
+@each $color, $value in $colors {
+  .cl-#{$color} {
+    color: $value !important;
+  }
+
+  .bg-#{$color} {
+    background: $value !important;
+  }
+}

@@ -12,12 +12,13 @@
 @import '~bootstrap/scss/reboot';
 @import 'base';
 @import 'typography';
+@import 'colors';
 
-@import 'buttons';
 @import '~bootstrap/scss/bootstrap-grid';
 @import 'grid-addons';
+@import 'buttons';
 @import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/utilities/clearfix';
+@import 'clearfix';
 @import '~bootstrap/scss/utilities/spacing';
 @import '~bootstrap/scss/utilities/text';
 
