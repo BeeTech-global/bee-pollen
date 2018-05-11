@@ -23,6 +23,7 @@
         "**/*.test.js",
         "**/*.spec.js",
         "**/*.storybook.js",
+        "./config/**/*.js",
         "**/.storybook/**/*"
       ]
     }]
