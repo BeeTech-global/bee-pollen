@@ -10,11 +10,17 @@ const nodeModules = path.resolve(__dirname, '../', 'node_modules')
 
 module.exports = storybookBaseConfig => {
   /* eslint-disable no-param-reassign */
+
   const config = merge(storybookBaseConfig, {
-    devtool: 'cheap-eval-source-map',
+    devtool: 'cheap-module-eval-source-map',
     target: 'web',
     name: 'bee-pollen',
-    resolve: { modules: [packagesPath] },
+    resolveLoader: {
+      modules: [nodeModules, path.resolve(__dirname, '.', 'loaders')]
+    },
+    resolve: {
+      modules: [packagesPath, nodeModules]
+    },
     module: {
       rules: [{
         test: /\.scss$/,
@@ -24,16 +30,17 @@ module.exports = storybookBaseConfig => {
           path.resolve(__dirname, '.')
         ],
         use: [{
-          loader: require.resolve('style-loader'),
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].css'
+          }
         }, {
-          loader: require.resolve('css-loader'),
-          options: { sourceMap: true }
+          loader: 'add-source-map-loader'
         }, {
           loader: require.resolve('postcss-loader'),
           options: {
             sourceMap: true,
             plugins: () => [
-              fontMagician({ display: 'block' }),
               flexBugsFixes(),
               autoprefixer({
                 browsers: ['last 3 versions', 'ie >= 11', '> 5%']
@@ -43,7 +50,9 @@ module.exports = storybookBaseConfig => {
           }
         }, {
           loader: require.resolve('sass-loader'),
-          options: { sourceMap: true }
+          options: {
+            sourceMap: true
+          }
         }]
       }]
     }

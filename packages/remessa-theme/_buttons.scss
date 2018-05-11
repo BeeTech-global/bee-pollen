@@ -6,3 +6,12 @@
     $background-image-hover: linear-gradient(185deg, $color-malachite, $color-dodger-blue)
   );
 }
+
+.btn-gradient-blue {
+  @include button-gradient-variant(
+    $color: $white,
+    $color-hover: $white,
+    $background-image: linear-gradient(84deg, $color-cornflower-blue, $color-dodger-blue),
+    $background-image-hover: linear-gradient(0deg, $color-cornflower-blue, $color-dodger-blue)
+  );
+}

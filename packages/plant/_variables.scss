@@ -18,6 +18,8 @@ $color-international-orange: #f50;
 $color-wild-rice: #dbe57b;
 $color-new-midnight-blue: #0ac;
 $color-dodger-blue: #08e;
+$color-cornflower-blue: #07b;
+
 
 $colors: (
   'cherry-pie': $color-cherry-pie,
@@ -36,30 +38,36 @@ $colors: (
   'international-orange': $color-international-orange,
   'wild-rice': $color-wild-rice,
   'new-midnight-blue': $color-new-midnight-blue,
-  'dodger-blue': $color-dodger-blue
-) !default;
+  'dodger-blue': $color-dodger-blue,
+  'cornflower-blue': $color-cornflower-blue
+);
 
-$theme-colors: (
-  'base-text': $color-dim-gray,
-  'heading': $color-regal-blue,
-  'primary': $color-cherry-pie,
-  'secondary': $color-medium-sea-green,
-  'tertiary': $color-new-midnight-blue,
-  'success': $color-dask-pastel-green,
-  'warning': $color-dark-orange,
-  'danger': $color-international-orange,
-  'aux01': $color-pattens-blue,
-  'aux02': $color-wild-rice,
-  'aux03': $color-dark-tangerine,
-  'aux04': $color-sun
-) !default;
+$primary: $color-cherry-pie !default;
+$secondary: $color-medium-sea-green !default;
+$success: $color-dask-pastel-green !default;
+$warning: $color-dark-orange !default;
+$danger: $color-international-orange !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'base-text': $color-dim-gray,
+    'heading': $color-regal-blue,
+    'tertiary': $color-new-midnight-blue,
+    'aux01': $color-pattens-blue,
+    'aux02': $color-wild-rice,
+    'aux03': $color-dark-tangerine,
+    'aux04': $color-sun
+  ),
+  $theme-colors
+);
 
 $body-color: $color-dim-gray;
 
 $font-family-sans-serif: 'Open Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
 $font-weight-bold: 600;
 
-$btn-border-radius: to-rem(3px);
+$btn-border-radius: to-rem(5px);
 $btn-padding-y: to-rem(12px);
 $btn-padding-x: to-rem(12px);
 $btn-line-height: 1.5;

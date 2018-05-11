@@ -1,3 +1,4 @@
+@import 'font';
 @import 'functions';
 @import 'variables';
 
@@ -7,13 +8,14 @@
 
 @import 'root';
 
-@import '~normalize.css/normalize.css';
+// @import '~normalize.css/normalize';
 @import '~bootstrap/scss/reboot';
 @import 'base';
 @import 'typography';
 
 @import 'buttons';
 @import '~bootstrap/scss/bootstrap-grid';
+@import 'grid-addons';
 @import '~bootstrap/scss/buttons';
 @import '~bootstrap/scss/utilities/clearfix';
 @import '~bootstrap/scss/utilities/spacing';
