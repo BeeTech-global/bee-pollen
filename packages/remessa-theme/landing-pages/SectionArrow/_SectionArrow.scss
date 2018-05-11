@@ -1,0 +1,15 @@
+.RM-SectionArrow {
+  position: relative;
+  height: to-rem(70px);
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: $white;
+  }
+
+  &--down {
+    svg { transform: rotate(180deg); }
+  }
+}

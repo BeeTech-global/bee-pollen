@@ -2,9 +2,9 @@
   padding: 1.5rem;
   overflow: hidden;
   background: var(--theme-primary);
+  border: 2px solid transparent;
   border-radius: to-rem(10px);
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  $root: &;
 
   &__content {
     :last-child { margin-bottom: 0; }
@@ -18,20 +18,14 @@
 
   &--outline {
     background: none;
-    border: 2px solid var(--theme-primary);
+    border-color: var(--theme-primary);
     box-shadow: none;
-
-    & #{$root}__content { margin: -2px; }
   }
 
   &--var1 {
     background: $white;
-    border: solid 1px rgba(51, 51, 85, 0.1);
+    border-color: rgba(51, 51, 85, 0.1);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
-
-    & #{$root}__content {
-      margin: -1px;
-    }
   }
 
   &--bg-img {

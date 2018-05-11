@@ -15,3 +15,12 @@
     $background-image-hover: linear-gradient(0deg, $color-cornflower-blue, $color-dodger-blue)
   );
 }
+
+.btn-outline-white {
+  @include button-outline-variant($white);
+
+  &:hover {
+    color: $color-cornflower-blue;
+    background-color: $white;
+  }
+}
