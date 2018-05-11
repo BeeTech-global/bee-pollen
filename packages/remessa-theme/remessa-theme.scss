@@ -1,8 +1,7 @@
-@import '../plant/variables';
-$primary: $color-cornflower-blue;
-
+@import 'variables';
 @import '../plant/plant';
 @import 'buttons';
+@import 'backgrounds';
 @import 'landing-pages/TopHeaderNav/TopHeaderNav';
 @import 'landing-pages/Hero/Hero';
 

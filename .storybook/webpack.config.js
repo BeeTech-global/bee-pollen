@@ -10,8 +10,8 @@ const nodeModules = path.resolve(__dirname, '../', 'node_modules')
 
 module.exports = storybookBaseConfig => {
   /* eslint-disable no-param-reassign */
-
   const config = merge(storybookBaseConfig, {
+    devServer: { stats: 'errors-only' },
     devtool: 'cheap-module-eval-source-map',
     target: 'web',
     name: 'bee-pollen',
@@ -43,7 +43,7 @@ module.exports = storybookBaseConfig => {
             plugins: () => [
               flexBugsFixes(),
               autoprefixer({
-                browsers: ['last 3 versions', 'ie >= 11', '> 5%']
+                browsers: ['last 2 versions', 'ie >= 11', '> 5%']
               }),
               mqPacker()
             ]

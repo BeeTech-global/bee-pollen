@@ -19,7 +19,10 @@ $color-wild-rice: #dbe57b;
 $color-new-midnight-blue: #0ac;
 $color-dodger-blue: #08e;
 $color-cornflower-blue: #07b;
-
+$color-mountain-meadow: #0fa087;
+$color-orient: #266471;
+$color-summer-sky: #19a8d6;
+$color-light-sea-green: #1eceb5;
 
 $colors: (
   'cherry-pie': $color-cherry-pie,
@@ -39,7 +42,11 @@ $colors: (
   'wild-rice': $color-wild-rice,
   'new-midnight-blue': $color-new-midnight-blue,
   'dodger-blue': $color-dodger-blue,
-  'cornflower-blue': $color-cornflower-blue
+  'cornflower-blue': $color-cornflower-blue,
+  'mountain-meadow': $color-mountain-meadow,
+  'orient': $color-orient,
+  'summer-sky': $color-summer-sky,
+  'light-sea-green': $color-light-sea-green
 );
 
 $primary: $color-cherry-pie !default;
