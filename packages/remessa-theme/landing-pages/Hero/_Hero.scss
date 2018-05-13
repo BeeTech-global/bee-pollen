@@ -16,10 +16,6 @@
     line-height: 1.17;
   }
 
-  &-lead {
-    margin: 0;
-  }
-
   @include media-breakpoint-up(sm) {
     padding-top: $rm-topheadernav-height + 3rem;
     padding-bottom: 3rem;

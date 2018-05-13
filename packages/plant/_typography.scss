@@ -4,13 +4,19 @@
   @if $size == 1 {
     font-size: 3.5rem #{$important};
     line-height: 1.33 #{$important};
-  } @else if $size == 2 {
+  }
+
+  @else if $size == 2 {
     font-size: to-rem(36px) #{$important};
     line-height: 1.33 #{$important};
-  } @else if $size == 3 {
+  }
+
+  @else if $size == 3 {
     font-size: 1.5rem #{$important};
     line-height: 1.33 #{$important};
-  } @else if $size == 4 {
+  }
+
+  @else if $size == 4 {
     font-size: to-rem(20px) #{$important};
     line-height: 1.6 #{$important};
   }

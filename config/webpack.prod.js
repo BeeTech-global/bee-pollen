@@ -45,10 +45,10 @@ const baseConfig = {
                 cssNano({
                   discardComments: { removeAll: true }
                 }),
-                flexBugsFixes(),
                 autoprefixer({
                   browsers: ['last 2 versions', 'ie >= 11', '> 5%']
                 }),
+                flexBugsFixes(),
                 mqPacker()
               ]
             }
