@@ -24,3 +24,28 @@
     background-color: $white;
   }
 }
+
+.btn-with-cta {
+  position: relative;
+  padding: 0;
+
+  a {
+    display: block;
+    padding: $btn-padding-y $btn-padding-x;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &.btn-lg a {
+    padding: $btn-padding-y-lg $btn-padding-x-lg;
+  }
+
+  &.btn-sm a {
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+  }
+
+  &.btn-block a {
+    display: block;
+    width: 100%;
+  }
+}
