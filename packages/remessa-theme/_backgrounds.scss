@@ -1,0 +1,11 @@
+.bg-grad-green-blue-1 {
+  background-image: linear-gradient(159deg, var(--color-mountain-meadow), var(--color-orient) 65%, var(--color-bay-of-many));
+
+  @include media-breakpoint-up(lg) {
+    background-image: linear-gradient(149deg, var(--color-mountain-meadow), var(--color-orient) 65%, var(--color-bay-of-many));
+  }
+}
+
+.bg-grad-blue-green-1 {
+  background-image: linear-gradient(-249deg, var(--color-summer-sky) 0%, var(--color-light-sea-green) 88%);
+}

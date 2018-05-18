@@ -1,0 +1,30 @@
+// @function scale($n) {
+//   @if ($n % 0.5 > 0) {
+//     @warn 'apenas valores mutiplos de 0.5 são aceitos';
+//   }
+//   @return $n * 1rem;
+// }
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function to-rem($size, $rem-base: 16) {
+  @return (strip-unit($size) / $rem-base) * 1rem;
+}
+
+@function is-empty($value) {
+  @if not $value
+    or $value == ""
+    or $value == 0
+      or $value == ()
+      or length($value) == 0 {
+    @return true;
+  }
+
+  @return false;
+}

@@ -1,0 +1,34 @@
+@import 'variables';
+@import '../plant/plant';
+@import 'buttons';
+@import 'backgrounds';
+@import 'landing-pages/TopHeaderNav/TopHeaderNav';
+@import 'landing-pages/Hero/Hero';
+@import 'landing-pages/Box/Box';
+@import 'landing-pages/SectionArrow/SectionArrow';
+@import 'landing-pages/Footer/Footer';
+
+// @include media-breakpoint-down(sm) {
+//   .container {
+//     padding: 0 $grid-gutter-width;
+//   }
+// }
+
+// .EE {
+//   box-shadow: 0 0 0 1px blue inset;
+
+//   &::before {
+//     display: block;
+//     content: '';
+//     height: 10vh;
+//     border: 1px solid cyan;
+//   }
+
+//   .row {
+//     span {
+//       display: block;
+//       height: 90vh;
+//       background: rgba(255, 0, 0, 0.3);
+//     }
+//   }
+// }

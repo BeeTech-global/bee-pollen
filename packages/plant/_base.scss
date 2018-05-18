@@ -1,0 +1,11 @@
+html {
+  font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -ms-overflow-style: scrollbar;
+  font-feature-settings: "kern" 1, "liga" 1;
+}

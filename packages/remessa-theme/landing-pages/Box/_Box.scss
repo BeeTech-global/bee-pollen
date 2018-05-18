@@ -1,0 +1,41 @@
+.RM-Box {
+  padding: 1.5rem;
+  overflow: hidden;
+  background: var(--theme-primary);
+  border: 2px solid transparent;
+  border-radius: to-rem(10px);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+
+  &__content {
+    :last-child { margin-bottom: 0; }
+  }
+
+  &__footer {
+    margin: 1.5rem (-1.5rem) (-1.5rem);
+    padding: 0.5rem 1.5rem;
+    background: var(--theme-primary);
+  }
+
+  &--outline {
+    background: none;
+    border-color: var(--theme-primary);
+    box-shadow: none;
+  }
+
+  &--var1 {
+    background: $white;
+    border-color: rgba(51, 51, 85, 0.1);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &--bg-img {
+    background-repeat: no-repeat;
+    background-position: 109% -6%;
+    background-size: auto 90px;
+
+    @include media-breakpoint-up(lg) {
+      background-position: 116% -26%;
+      background-size: auto 125px;
+    }
+  }
+}

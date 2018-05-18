@@ -1,0 +1,84 @@
+@mixin h($size, $important: false) {
+  $important: if($important, !important, '');
+
+  @if $size == 1 {
+    font-size: 3.5rem #{$important};
+    line-height: 1.33 #{$important};
+  }
+
+  @else if $size == 2 {
+    font-size: to-rem(36px) #{$important};
+    line-height: 1.33 #{$important};
+  }
+
+  @else if $size == 3 {
+    font-size: 1.5rem #{$important};
+    line-height: 1.33 #{$important};
+  }
+
+  @else if $size == 4 {
+    font-size: to-rem(20px) #{$important};
+    line-height: 1.6 #{$important};
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $scale in (1, 2, 3, 4) {
+      .h#{$scale}#{$infix} {
+        @include h($scale, not is-empty($infix));
+      }
+    }
+  }
+}
+
+%base-h {
+  color: var(--theme-heading);
+  font-weight: 600;
+}
+
+@each $h in (h1, h2, h3, h4) {
+  #{$h},
+  .#{$h} {
+    @extend %base-h;
+    @extend .#{$h};
+  }
+}
+
+p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-support {
+  color: --var(color-dark-gray);
+  font-size: to-rem(14px);
+  font-stretch: normal;
+  line-height: 1.71;
+}
+
+$font-sizes: (
+  -2: to-rem(10),
+  -1: to-rem(14),
+  0: 1rem,
+  1: 1.5rem,
+  2: 2rem,
+  3: to-rem(36px),
+  4: 3rem,
+  5: 3.5rem
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $scale, $value in $font-sizes {
+      .font#{$infix}-#{$scale} {
+        font-size: $value !important;
+      }
+    }
+  }
+}

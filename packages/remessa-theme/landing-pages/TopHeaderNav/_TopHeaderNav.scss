@@ -1,0 +1,15 @@
+$rm-topheadernav-height: to-rem(70px);
+
+.RM-TopHeaderNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $rm-topheadernav-height;
+  padding-top: 2.5rem;
+
+  svg {
+    width: to-rem(140px);
+    height: to-rem(24px);
+  }
+}
