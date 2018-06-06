@@ -25,30 +25,34 @@ $color-orient: #266471;
 $color-summer-sky: #19a8d6;
 $color-light-sea-green: #1eceb5;
 
-$colors: (
-  'cherry-pie': $color-cherry-pie,
-  'bay-of-many': $color-bay-of-many,
-  'regal-blue': $color-regal-blue,
-  'dim-gray': $color-dim-gray,
-  'suva-gray': $color-suva-gray,
-  'dark-gray': $color-dark-gray,
-  'echo-blue': $color-echo-blue,
-  'pattens-blue': $color-pattens-blue,
-  'medium-spring-green': $color-medium-spring-green,
-  'dask-pastel-green': $color-dask-pastel-green,
-  'medium-sea-green': $color-medium-sea-green,
-  'dark-tangerine': $color-dark-tangerine,
-  'dark-orange': $color-dark-orange,
-  'sun': $color-sun,
-  'international-orange': $color-international-orange,
-  'wild-rice': $color-wild-rice,
-  'new-midnight-blue': $color-new-midnight-blue,
-  'dodger-blue': $color-dodger-blue,
-  'cornflower-blue': $color-cornflower-blue,
-  'mountain-meadow': $color-mountain-meadow,
-  'orient': $color-orient,
-  'summer-sky': $color-summer-sky,
-  'light-sea-green': $color-light-sea-green
+$colors: () !default;
+$colors: map-merge(
+  (
+    'cherry-pie': $color-cherry-pie,
+    'bay-of-many': $color-bay-of-many,
+    'regal-blue': $color-regal-blue,
+    'dim-gray': $color-dim-gray,
+    'suva-gray': $color-suva-gray,
+    'dark-gray': $color-dark-gray,
+    'echo-blue': $color-echo-blue,
+    'pattens-blue': $color-pattens-blue,
+    'medium-spring-green': $color-medium-spring-green,
+    'dask-pastel-green': $color-dask-pastel-green,
+    'medium-sea-green': $color-medium-sea-green,
+    'dark-tangerine': $color-dark-tangerine,
+    'dark-orange': $color-dark-orange,
+    'sun': $color-sun,
+    'international-orange': $color-international-orange,
+    'wild-rice': $color-wild-rice,
+    'new-midnight-blue': $color-new-midnight-blue,
+    'dodger-blue': $color-dodger-blue,
+    'cornflower-blue': $color-cornflower-blue,
+    'mountain-meadow': $color-mountain-meadow,
+    'orient': $color-orient,
+    'summer-sky': $color-summer-sky,
+    'light-sea-green': $color-light-sea-green
+  ),
+  $colors
 );
 
 $primary: $color-cherry-pie !default;
@@ -83,7 +87,7 @@ $spacers: map-merge(
   $spacers
 );
 
-$body-color: $color-dim-gray;
+$body-color: $color-dim-gray !default;
 
 $font-family-sans-serif: 'Open Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
 $font-weight-bold: 600;
