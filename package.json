@@ -19,7 +19,7 @@
     "build": "rimraf dist && webpack --config config/webpack.prod.js"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.4.1",
     "normalize.css": "^8.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
