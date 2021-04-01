@@ -1,6 +1,6 @@
 {
   "name": "@beetech/bee-pollen",
-  "version": "2.0.0-beta.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -16,7 +16,10 @@
     "storybook": "start-storybook -p 9001",
     "storybook:dev": "nodemon --watch .storybook --exec \"start-storybook -p 9001\"",
     "build-storybook": "build-storybook",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js",
+    "lint": "exit 0",
+    "test": "exit 0",
+    "coverage": "exit 0"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
